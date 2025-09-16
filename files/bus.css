@@ -1,0 +1,179 @@
+
+    .specs-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+ 
+    .specs-left {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .specs-left img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price span {
+      display: block;
+      color: red;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .specs-right {
+      flex: 2;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .highlight-box {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .highlight-box div {
+      flex: 1;
+      padding: 10px;
+      font-weight: bold;
+      color: red;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #444;
+      width: 40%;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-red {
+      background: red;
+      color: #fff;
+    }
+
+    .btn-red:hover {
+      background: darkred;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid red;
+      color: red;
+    }
+
+    .btn-outline:hover {
+      background: red;
+      color: #fff;
+    }
+    /* seats styling starts here -------------------*/
+  #seats{
+        border: 1px solid red;
+        width: 70vw;
+        margin: 10px auto;
+        
+        
+    }
+    .seat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .image img{
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+        min-width: 200px;
+    }
+    .seat p {
+  width: 70%;
+    }
+    #details h2{
+      text-align: center;
+      margin: 50px;
+    }
+    /* seats styling starts here -------------------*/
+   
+    /* Responsive */
+    @media (max-width: 768px) {
+      .specs-container {
+        flex-direction: column;
+      }
+      .highlight-box {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+      #seats{
+        border: 1px solid red;
+        width: 100%;
+        margin: 10px auto;
+        
+    }
+    .seat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image img{
+        display: block;
+        margin: 0 auto;
+        width: 90vw;
+        
+    }
+    .seat p {
+  width: 100%;
+    }
+    }
+

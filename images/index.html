@@ -1,0 +1,354 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Models Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #222;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding: 10px;
+      }
+
+      td {
+        text-align: left;
+        border: none;
+        padding: 10px 5px;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Car Models Comparison</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Model A</th>
+        <th>Model B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Feature">Engine</td>
+        <td data-label="Model A">2.0L Turbo</td>
+        <td data-label="Model B">3.0L V6</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Horsepower</td>
+        <td data-label="Model A">250 HP</td>
+        <td data-label="Model B">350 HP</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Fuel Efficiency</td>
+        <td data-label="Model A">28 MPG</td>
+        <td data-label="Model B">22 MPG</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Price</td>
+        <td data-label="Model A">$30,000</td>
+        <td data-label="Model B">$45,000</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Safety Rating</td>
+        <td data-label="Model A">4 Stars</td>
+        <td data-label="Model B">5 Stars</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+--><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Specifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .specs-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .specs-left {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .specs-left img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price span {
+      display: block;
+      color: red;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .specs-right {
+      flex: 2;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .highlight-box {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .highlight-box div {
+      flex: 1;
+      padding: 10px;
+      font-weight: bold;
+      color: red;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #444;
+      width: 40%;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-red {
+      background: red;
+      color: #fff;
+    }
+
+    .btn-red:hover {
+      background: darkred;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid red;
+      color: red;
+    }
+
+    .btn-outline:hover {
+      background: red;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .specs-container {
+        flex-direction: column;
+      }
+
+      .highlight-box {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>FRR90 Specifications</h2>
+
+  <div class="specs-container">
+
+    <!-- Left section -->
+    <div class="specs-left">
+      <img src="https://isuzuimageurl.com/bus.png" alt="Vehicle">
+      <div class="price">
+        <span>Vehicle Price</span>
+        KSh 10,425,000
+      </div>
+    </div>
+
+    <!-- Right section -->
+    <div class="specs-right">
+      <div class="highlight-box">
+        <div>4x2<br><small>Axle Layout</small></div>
+        <div>140(190) @2600<br><small>Max Output</small></div>
+        <div>50 Seats<br><small>No. of Seats</small></div>
+      </div>
+
+      <table>
+        <tr>
+          <td>Transmission</td>
+          <td>6 Speed (6F/1R)</td>
+        </tr>
+        <tr>
+          <td>Power</td>
+          <td>140(190) @ 2600</td>
+        </tr>
+        <tr>
+          <td>Displacement (Cc)</td>
+          <td>5193</td>
+        </tr>
+        <tr>
+          <td>Axle Layout</td>
+          <td>4x2</td>
+        </tr>
+        <tr>
+          <td>Torque</td>
+          <td>52(510) @ 1,600</td>
+        </tr>
+        <tr>
+          <td>Gross Vehicle Weight (GVW)</td>
+          <td>10,400</td>
+        </tr>
+        <tr>
+          <td>Fuel Tank Capacity</td>
+          <td>200 Litres</td>
+        </tr>
+        <tr>
+          <td>Suspension (Front & Rear)</td>
+          <td>Multi Leaf Spring with Helper Spring, Double Acting with Stabilizer</td>
+        </tr>
+        <tr>
+          <td>Engine Model</td>
+          <td>4HK1-TCC</td>
+        </tr>
+        <tr>
+          <td>Clutch Diameter</td>
+          <td>Dry single plate, 14"</td>
+        </tr>
+        <tr>
+          <td>Seating Capacity</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Emission Standard</td>
+          <td>Euro IV</td>
+        </tr>
+        <tr>
+          <td>Fleet Management System</td>
+          <td>Equipped</td>
+        </tr>
+      </table>
+
+      <div class="buttons">
+        <button class="btn btn-red">View All Specs</button>
+        <button class="btn btn-outline">Compare</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+    }
+
+    .ad-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .ad-left {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .ad-left h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .ad-left p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .specs {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .spec {
+      text-align: center;
+    }
+
+    .spec h3 {
+      color: red;
+      font-size: clamp(10px,5vw,30px);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .spec span {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .ad-right {
+      flex: 1;
+    }
+
+    .ad-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #details button {
+  background: transparent;
+  color: #252121;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 30px;
+  width: 200px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 30px;
+  height: 49px;
+  transition: background 0.9s ease;
+}
+    #details button:hover {
+  background: black;
+  color: #fafafa;
+  border: 2px solid rgb(255, 255, 255);
+  
+}
+    /* models section starts here ---------------------------------------------------------------------------*/
+/* Whole section */
+#models1 {
+padding: 20px;
+margin: 0 auto;
+
+}
+#models1 .scroll{
+  overflow-y: auto;
+}
+#models1 h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Container that scrolls horizontally */
+#models1 .scroll-cont {
+display: flex;
+align-items: center;
+justify-content: center;
+
+min-width: 1500px;
+
+}
+
+#models1 .scroll-cont::-webkit-scrollbar {
+  height: 8px;
+}
+
+#models1 .scroll-cont::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+/* Each card (scroll item) */
+#models1 .scroll-items {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+    
+}
+#models1 .scroll-items p {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 15px;
+}
+#models1 .scroll-items:hover {
+  transform: translateY(-5px);
+}
+
+#models1 .scroll-items h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #d62828; /* red highlight */
+}
+
+/* Images inside cards */
+#models1 .scroll-items img {
+     width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+    /*
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid red;*/
+}
+#models1 .scroll-items video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    /*
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid red;*/
+}
+
+
+
+#models1 .scroll-items button i {
+  margin-left: 8px;
+}
+
+#models1 .scroll-items button:hover {
+  background: #a61d1d;
+}
+
+/* models section ends here ---------------------------------------------------------------------------*/
+/* banner section starts here ---------------------------------------------------------------------------*/
+ #banner {
+  background:linear-gradient(rgba(0, 0, 0, 0.379),rgba(0, 0, 0, 0.39)),url(../images/interior5.jpg);
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ }
+#banner .card{
+  background-color: rgba(255, 255, 255, 0.762);
+  max-height: 30vh;
+  max-width: 400px;
+  margin-left: 60px;
+  padding: 40px;
+
+ 
+}
+ #banner .card h3{
+    letter-spacing: 2px;
+    font-size:clamp(20px,5vw,30px); 
+    font-weight: 200; 
+  }
+  #banner .card h2{
+   
+    font-size:clamp(15px,5vw,29px); 
+    font-weight: 900;  
+  }
+/* banner section ends here ---------------------------------------------------------------------------*/
+/* images section starts here ---------------------------------------------------------------------------*/
+#images{
+  background-color: rgb(211, 209, 209);
+  height: 60vh;
+  width: 98vw;
+  padding: 20px;
+ 
+  margin: 20px;
+}
+#images .images1{
+   
+   height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#images .main{
+  
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 2px;
+
+}
+#images .main img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  
+}
+#images .others{
+ 
+ width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#images .others img{
+  width: 45%;
+  margin: 4px;
+  border-radius: 20px;
+  aspect-ratio: 19/11;
+}
+/* images section ends here ---------------------------------------------------------------------------*/
+/* compare section starts here ---------------------------------------------------------------------------*/
+#compare{
+  padding: 20px;
+}
+    
+    #compare .accordion {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #compare .accordion-item {
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    #compare span{
+      color: rgb(255, 255, 255);
+      font-family: monospace;
+    }
+
+    #compare .accordion-header {
+      background: #000;
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #compare .accordion-header i {
+      transition: transform 1s ease;
+    }
+
+    #compare .accordion-header.active i {
+      transform: rotate(180deg);
+      transition: 1s;
+    }
+
+    #compare .accordion-content {
+      display: none;
+      background: #f5f5f5;
+      padding: 0;
+      
+    }
+  #compare .accordion-content img{
+    width: 150px;
+    
+    padding: 0;
+  }
+    #compare .accordion-content button{
+  padding: 10px 20px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  }
+    #compare table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #compare th, td {
+      padding: 12px;
+      width: 25%;
+      color: rgb(62, 61, 61);
+     
+    }
+
+    #compare th {
+      background: #fff;
+      font-weight: bold;
+      text-align: left;
+      color: #f50d0d;
+    }
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #compare table, #compare thead, #compare tbody, #compare th, #compare td, #compare tr {
+        display: block;
+        width: 100%;
+      }
+      #compare thead { display: none; }
+      #compare tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 6px;
+        padding: 10px;
+      }
+      #compare td {
+        text-align: left;
+        border: none;
+        padding: 8px 5px;
+      }
+      #compare td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #d91414;
+      }
+    }
+
+/* compare section ends here ---------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .ad-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    #images{
+  background-color: rgb(211, 209, 209);
+  height: 100vh;
+  width:100%;
+  padding: 20px;
+  
+  margin: 20px;
+}
+    #images .images1{
+   
+   height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#images .main{
+  
+  width: 100%;
+  height: 32vh;
+  text-align: center;
+  padding: 0px;
+
+}
+#images .main img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
+}
+#images .others{
+ 
+ width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#images .others img{
+  width: 49%;
+  margin: 1px;
+  border-radius: 20px;
+    aspect-ratio: 20/18;
+}
+
+
+     }

@@ -7,7 +7,7 @@
     }
 
     body {
-      background: #f8f8f8;
+      background: #ffffff;
     }
 
     .ad-container {
@@ -59,7 +59,8 @@
 
     .spec span {
       font-size: 14px;
-      color: #444;
+      color: #000000;
+      font-weight: bold;
     }
 
     .ad-right {
@@ -72,15 +73,17 @@
       object-fit: cover;
     }
     #details button {
-  background: transparent;
-  color: #252121;
-  border: 2px solid rgb(0, 0, 0);
+  background: red;
+  color: #ffffff;
+  border: 2px solid rgb(255, 0, 0);
   padding: 10px 30px;
   width: 200px;
   font-size: 14px;
+  border-radius: 50px;
   cursor: pointer;
-  margin: 30px;
+  margin: 10px;
   height: 49px;
+  display: inline;
   transition: background 0.9s ease;
 }
     #details button:hover {
@@ -222,38 +225,72 @@ min-width: 1500px;
   }
 /* banner section ends here ---------------------------------------------------------------------------*/
 /* images section starts here ---------------------------------------------------------------------------*/
-#images{
-  background-color: rgb(211, 209, 209);
-  height: 60vh;
+#images {
+  background-color: #fff;
+}
+
+#images .images1 {
   width: 98vw;
   padding: 20px;
- 
-  margin: 20px;
-}
-#images .images1{
-   
-   height: 55vh;
-  width: 100%;
+  
+  margin: 20px auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;        /* allow wrapping */
+  gap: 20px;              /* spacing between columns */
 }
+
+/* Main image */
+.images1 .main {
+  
+  flex: 1 1 48%;          /* flexible, about half width */
+  min-width: 300px;       /* don’t shrink too small */
+  aspect-ratio: 4/2.1;      /* keeps proportions */
+}
+
+.images1 .main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Other images grid */
+#images .others {
+  
+  flex: 1 1 48%;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.others .pic1 {
+
+  flex: 1 1 48%;          /* two per row */
+  aspect-ratio: 2/1;      /* square ratio */
+}
+
+.images1 .others img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 📱 Mobile adjustments */
+
+/* ima
 #images .main{
   
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  padding: 2px;
+  
 
 }
 #images .main img{
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
+  
   
 }
 #images .others{
- 
+ border: 1px solid blue;
  width: 50%;
   height: 100%;
   display: flex;
@@ -261,13 +298,7 @@ min-width: 1500px;
   align-items: center;
   flex-wrap: wrap;
 }
-#images .others img{
-  width: 45%;
-  margin: 4px;
-  border-radius: 20px;
-  aspect-ratio: 19/11;
-}
-/* images section ends here ---------------------------------------------------------------------------*/
+ges section ends here ---------------------------------------------------------------------------*/
 /* compare section starts here ---------------------------------------------------------------------------*/
 #compare{
   padding: 20px;
@@ -390,52 +421,21 @@ min-width: 1500px;
       max-width: 1200px;
       margin: 30px auto;
     }
-    #images{
-  background-color: rgb(211, 209, 209);
-  height: 100vh;
-  width:100%;
-  padding: 20px;
-  
-  margin: 20px;
-}
-    #images .images1{
-   
-   height: 95vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#images .main{
-  
-  width: 100%;
-  height: 32vh;
-  text-align: center;
-  padding: 0px;
+      #images .images1 {
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
-#images .main img{
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  
-}
-#images .others{
- 
- width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#images .others img{
-  width: 49%;
-  margin: 1px;
-  border-radius: 20px;
-    aspect-ratio: 20/18;
+  .images1 .main,
+  #images .others {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .others .pic1 {
+    flex: 1 1 48%;
+  }
 }
 
-
-     }
+     
